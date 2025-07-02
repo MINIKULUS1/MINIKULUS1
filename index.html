@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MINI KULUS</title>
+    <!-- Memuat Tailwind CSS untuk styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Memuat Google Font "Poppins" -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap" rel="stylesheet">
+    <style>
+        /* Menggunakan font Poppins yang tebal (black) */
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /* Animasi untuk gradien */
+        @keyframes gradient-animation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* Latar belakang dengan gradien yang lebih kaya warna */
+        .animated-gradient-bg {
+            background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab, #f9484a, #f0a500);
+            background-size: 600% 600%;
+            animation: gradient-animation 20s ease infinite;
+        }
+
+        /* Teks dengan efek gradien animasi */
+        .animated-gradient-text {
+            /* Membuat gradien untuk teks */
+            background: linear-gradient(45deg, #fff, #f3ec78, #ffd1ff, #c0c0ff, #fff);
+            background-size: 400% 400%;
+            animation: gradient-animation 8s ease infinite;
+
+            /* Menerapkan gradien sebagai warna teks */
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            
+            /* Menambahkan bayangan untuk membuat teks lebih menonjol */
+            text-shadow: 0px 3px 5px rgba(0, 0, 0, 0.25);
+        }
+    </style>
+</head>
+<body class="animated-gradient-bg">
+    <!-- Kontainer utama untuk menengahkan konten -->
+    <div class="min-h-screen flex items-center justify-center p-4">
+        <!-- Teks utama dengan gaya gradien baru -->
+        <h1 class="text-6xl md:text-8xl lg:text-9xl font-black text-center select-none tracking-tighter animated-gradient-text">
+            MINI KULUS
+        </h1>
+    </div>
+</body>
+</html>
